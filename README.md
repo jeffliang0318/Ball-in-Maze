@@ -25,11 +25,11 @@ In addition, this project will have:
 
 ### Wireframes
 
-![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-15%20at%205.51.04%20PM.png)
+![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-15%20at%2011.40.16%20PM.png)
 
-![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-15%20at%205.51.04%20PM.png)
+![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-15%20at%2011.39.55%20PM.png)
 
-![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-15%20at%205.51.04%20PM.png)
+![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-15%20at%2011.34.04%20PM.png)
 
 ### Architecture and Technologies
 
