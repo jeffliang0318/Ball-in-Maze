@@ -1,0 +1,53 @@
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+  width: 60vw;
+
+ }
+
+ div {
+   margin: -2px;
+   vertical-align: top;
+ }
+
+ .ball {
+   height: 5%;
+   width: 5%;
+   /* border: 1px solid red; */
+  background-size: cover;
+  background-position: center;
+   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523915701/wood-1043207_1280_copy.jpg');
+   display: inline-block;
+ }
+ .board {
+   border: 1px solid grey;
+   width: 600px;
+   height: 600px;
+ }
+ .game {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .hole {
+   height: 5%;
+   width: 5%;
+   background-size: contain;
+   background-image: url('https://res.cloudinary.com/dgxmjwbrc/image/upload/v1523914889/Sirex_noctilio_hole_cropped.jpg');
+   display: inline-block;
+ }
+ .path {
+   height: 5%;
+   width: 5%;
+   background-size: cover;
+   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909589/wood-1043207_1280.jpg');
+   display: inline-block;
+ }
+ .wall {
+   height: 5%;
+   width: 5%;
+   background-size: cover;
+   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909588/download.jpg');
+   display: inline-block;
+ }
