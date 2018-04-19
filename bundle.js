@@ -90,7 +90,7 @@ var ball = {
 
 var dx = 0;
 var dy = 0;
-var speed = 1;
+var speed = 500;
 function drawMap() {
   var cell = document.getElementById("boardId");
   cell.innerHTML = "";
@@ -230,16 +230,22 @@ var restartButton = document.getElementById("restart");
 restartButton.onclick = function () {
   map[1][1] = 5;
   map[ball.y][ball.x] = 2;
-  map[ball.y][ball.x - 1] = 2;
   var _ref6 = [1, 1];
   ball.x = _ref6[0];
   ball.y = _ref6[1];
 };
 var pauseButton = document.getElementById("pause");
 var board = document.getElementById("game-board");
-pauseButton.onclick = function () {
-  board.innerHTML += "<div class='pause' id='pause-modal'><div class='pause-window'><h2>Pause</h2></div></div>";
+var pauseModal = document.getElementById("pause-modal");
+
+pauseModal.onclick = function () {
+  pauseModal.style.display = "none";
 };
+pauseButton.onclick = function () {
+  console.log("flex");
+  pauseModal.style.display = "flex";
+};
+
 // drawMap();
 setInterval(drawMap, speed);
 

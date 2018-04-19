@@ -4,19 +4,22 @@
     <meta charset="utf-8" />
     <title>Ball-in-Maze</title>
     <link rel="stylesheet" type="text/css" href="maze.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 </head>
 <body>
   <h1>Ball-In-Maze</h1>
   <div class="game-board" id="game-board">
-    <div class="game">
-    <div id='boardId' class="board">
-      <!-- <canvas id="myCanvas"></canvas> -->
-    </div>
-  </div>
     <div class="side-section">
       <button id="pause" type="button" name="Pause">Pause</button>
       <button id="restart" type="button" name="Restsrt" >Restart</button>
       <button id="rule" type="button" name="Rule">Rule</button>
+    </div>
+    <div class="game">
+      <div id='boardId' class="board">
+      </div>
+      <div class='pause-modal' id='pause-modal'>
+        <div class='pause-window' id='pause-window'><h2>Pause</h2></div>
+      </div>
     </div>
   </div>
 <script src="bundle.js">

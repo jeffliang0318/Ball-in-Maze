@@ -2,33 +2,37 @@ canvas {
   background: #eee;
   display: block;
   margin: 0 auto;
-  width: 60vw;
+  height: 70vh;
 
  }
  h1{
-   margin-left: 40%;
-   font-weight: bold;
-   font-size: 10vh;
+   text-align: center;
+   font-size: 7vh;
+   margin-bottom: 0;
+   font-family: 'Monoton';
  }
  div {
-   margin: -2px;
    vertical-align: top;
  }
  .game-board {
    display: flex;
    justify-content: space-around;
    position: relative;
+   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909589/wood-1043207_1280.jpg');
+   background-size: cover;
  }
  .side-section {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
  }
  .side-section button {
   font-size: 30px;
-  margin: 50px 150px 50px 0;
+  margin: 50px 0 50px 0;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
+  min-width: 200px;
  }
 
  .side-section button:hover {
@@ -57,7 +61,6 @@ canvas {
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-left: 150px;
  }
  .hole {
    height: 5%;
@@ -70,7 +73,6 @@ canvas {
    height: 5%;
    width: 5%;
    background-size: cover;
-   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909589/wood-1043207_1280.jpg');
    display: inline-block;
  }
  .wall {
@@ -88,8 +90,7 @@ canvas {
    background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1524067906/coin.jpg');
    display: inline-block;
  }
- .pause {
-   position: absolute;
+ .pause-modal {
    display: flex;
    align-items: center;
    justify-content: center;

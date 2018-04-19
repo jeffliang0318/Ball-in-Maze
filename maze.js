@@ -39,7 +39,7 @@ let ball = {
 
 let dx = 0;
 let dy = 0;
-let speed = 1;
+let speed = 500;
 function drawMap() {
   let cell = document.getElementById("boardId");
   cell.innerHTML = "";
@@ -170,14 +170,20 @@ let restartButton = document.getElementById("restart");
 restartButton.onclick = function () {
     map[1][1] = 5;
     map[ball.y][ball.x] = 2;
-    map[ball.y][ball.x - 1] = 2;
     [ball.x, ball.y] = [1,1];
 };
 let pauseButton = document.getElementById("pause");
 let board = document.getElementById("game-board");
-pauseButton.onclick = function () {
-  board.innerHTML +=
-  "<div class='pause' id='pause-modal'><div class='pause-window'><h2>Pause</h2></div></div>";
+let pauseModal = document.getElementById("pause-modal");
+
+pauseModal.onclick = function () {
+  pauseModal.style.display = "none";
 };
+pauseButton.onclick = function () {
+  console.log("flex");
+  pauseModal.style.display = "flex";
+};
+
+
 // drawMap();
 setInterval(drawMap, speed);
