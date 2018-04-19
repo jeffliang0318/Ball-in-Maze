@@ -81,41 +81,48 @@
 // 2=path
 // 3=hole
 // 5=ball
-var map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 1, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]];
+var map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 5, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1], [1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1], [1, 4, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 1, 2, 3, 1, 1, 1, 2, 3, 2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2, 1, 2, 1, 1, 1], [1, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1], [1, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1], [1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 1, 2, 3, 2, 2, 2, 2, 2, 1, 2, 1, 2, 1], [1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1], [1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 3, 1, 2, 2, 2, 1], [1, 3, 2, 2, 2, 2, 1, 2, 2, 2, 3, 2, 2, 2, 2, 1, 3, 2, 2, 1], [1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1], [1, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1], [1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 2, 1], [1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, 1, 2, 1], [1, 2, 2, 1, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]];
 
 var ball = {
   x: 1,
   y: 1
 };
 
+var dx = 0;
+var dy = 0;
+var speed = 1;
 function drawMap() {
-  var board = document.getElementById("boardId");
-  board.innerHTML = "";
+  var cell = document.getElementById("boardId");
+  cell.innerHTML = "";
   for (var j = 0; j < map.length; j++) {
     // console.log(map[j]);
     for (var i = 0; i < map[j].length; i++) {
       // console.log(map[j][i]);
       switch (map[j][i]) {
         case 1:
-          board.innerHTML += "<div class='wall'></div>";
+          cell.innerHTML += "<div class='wall'></div>";
           break;
         case 2:
-          board.innerHTML += "<div class='path'></div>";
+          cell.innerHTML += "<div class='path'></div>";
           break;
         case 3:
-          board.innerHTML += "<div class='hole'></div>";
+          cell.innerHTML += "<div class='hole'></div>";
+          break;
+        case 4:
+          cell.innerHTML += "<div class='goal'></div>";
           break;
         case 5:
-          board.innerHTML += "<div class='ball'></div>";
+          cell.innerHTML += "<div class='ball'></div>";
           break;
 
       }
     }
-    board.innerHTML += "<br>";
+    cell.innerHTML += "<br>";
   }
 }
 
 document.onkeydown = function (e) {
+
   switch (e.keyCode) {
     // 1= wall
     // 2=path
@@ -128,17 +135,28 @@ document.onkeydown = function (e) {
         map[ball.y][ball.x] = 2;
         ball.x = ball.x - 1;
         map[ball.y][ball.x] = 5;
-        drawMap();
-        break;
+        // drawMap();
+        // drawMap();
       } else if (map[ball.y][ball.x - 1] === 3) {
         //  ball drop into the hole
         map[1][1] = 5;
         map[ball.y][ball.x] = 2;
+
+        // drawMap();
         var _ref = [1, 1];
         ball.x = _ref[0];
         ball.y = _ref[1];
+        break;
+      } else if (map[ball.y][ball.x - 1] === 4) {
+        //  ball drop into the hole
+        map[1][1] = 5;
+        map[ball.y][ball.x] = 2;
+        map[ball.y][ball.x - 1] = 2;
 
-        drawMap();
+        // drawMap();
+        var _ref2 = [1, 1];
+        ball.x = _ref2[0];
+        ball.y = _ref2[1];
         break;
       }
       break;
@@ -149,37 +167,38 @@ document.onkeydown = function (e) {
         map[ball.y][ball.x] = 2;
         ball.y = ball.y - 1;
         map[ball.y][ball.x] = 5;
-        drawMap();
+        // drawMap();
         break;
       } else if (map[ball.y - 1][ball.x] === 3) {
         //  ball drop into the hole
         map[1][1] = 5;
         map[ball.y][ball.x] = 2;
-        var _ref2 = [1, 1];
-        ball.x = _ref2[0];
-        ball.y = _ref2[1];
 
-        drawMap();
+        // drawMap();
+        var _ref3 = [1, 1];
+        ball.x = _ref3[0];
+        ball.y = _ref3[1];
         break;
       }
       break;
     case 39:
       // right
+      dx += 1;
       if (map[ball.y][ball.x + 1] === 2) {
         map[ball.y][ball.x] = 2;
         ball.x = ball.x + 1;
         map[ball.y][ball.x] = 5;
-        drawMap();
+        // drawMap();
         break;
       } else if (map[ball.y][ball.x + 1] === 3) {
         //  ball drop into the hole
         map[1][1] = 5;
         map[ball.y][ball.x] = 2;
-        var _ref3 = [1, 1];
-        ball.x = _ref3[0];
-        ball.y = _ref3[1];
 
-        drawMap();
+        // drawMap();
+        var _ref4 = [1, 1];
+        ball.x = _ref4[0];
+        ball.y = _ref4[1];
         break;
       }
       break;
@@ -189,17 +208,17 @@ document.onkeydown = function (e) {
         map[ball.y][ball.x] = 2;
         ball.y = ball.y + 1;
         map[ball.y][ball.x] = 5;
-        drawMap();
+        // drawMap();
         break;
       } else if (map[ball.y + 1][ball.x] === 3) {
         //  ball drop into the hole
         map[1][1] = 5;
         map[ball.y][ball.x] = 2;
-        var _ref4 = [1, 1];
-        ball.x = _ref4[0];
-        ball.y = _ref4[1];
 
-        drawMap();
+        // drawMap();
+        var _ref5 = [1, 1];
+        ball.x = _ref5[0];
+        ball.y = _ref5[1];
         break;
       }
       break;
@@ -207,7 +226,22 @@ document.onkeydown = function (e) {
   }
 };
 
-drawMap();
+var restartButton = document.getElementById("restart");
+restartButton.onclick = function () {
+  map[1][1] = 5;
+  map[ball.y][ball.x] = 2;
+  map[ball.y][ball.x - 1] = 2;
+  var _ref6 = [1, 1];
+  ball.x = _ref6[0];
+  ball.y = _ref6[1];
+};
+var pauseButton = document.getElementById("pause");
+var board = document.getElementById("game-board");
+pauseButton.onclick = function () {
+  board.innerHTML += "<div class='pause' id='pause-modal'><div class='pause-window'><h2>Pause</h2></div></div>";
+};
+// drawMap();
+setInterval(drawMap, speed);
 
 /***/ })
 /******/ ]);
