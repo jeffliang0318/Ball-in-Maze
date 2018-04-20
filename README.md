@@ -9,7 +9,7 @@ Ball in maze is a game to manipulating the maze board to get the ball towards th
 
 In the javascript version, you can use keyboard to play the game.
 
-![index]()
+![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/Screen%20Shot%202018-04-20%20at%209.53.53%20AM.png)
 
 ### Functionality
 
@@ -31,6 +31,7 @@ This project used following technologies:
 ###Bonus feature
 
 ![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/shorter_smoother.gif)
+
 
 There are many directions in which this project could be better.
 
