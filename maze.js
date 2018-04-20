@@ -39,40 +39,42 @@ let ball = {
 
 let dx = 0;
 let dy = 0;
-let speed = 500;
+let speed = 50;
 function drawMap() {
   let cell = document.getElementById("boardId");
   cell.innerHTML = "";
+  let string =  "";
   for (var j = 0; j < map.length; j++) {
     // console.log(map[j]);
     for (var i = 0; i < map[j].length; i++) {
       // console.log(map[j][i]);
       switch (map[j][i]) {
         case 1:
-        cell.innerHTML +=
+        string +=
         "<div class='wall'></div>";
         break;
         case 2:
-        cell.innerHTML +=
+        string +=
         "<div class='path'></div>";
         break;
         case 3:
-        cell.innerHTML +=
+        string +=
         "<div class='hole'></div>";
         break;
         case 4:
-        cell.innerHTML +=
+        string +=
         "<div class='goal'></div>";
         break;
         case 5:
-        cell.innerHTML +=
+        string +=
         "<div class='ball'></div>";
         break;
 
       }
     }
-    cell.innerHTML += "<br>";
+    string += "<br>";
   }
+  cell.innerHTML = string;
 }
 
 document.onkeydown = function(e){
@@ -226,9 +228,8 @@ pauseButton.onclick = function () {
   board.style.display = "none";
 };
 ruleButton.onclick = function () {
-  modal.style.display = "flex";
   ruleWindow.style.display = "block";
-  console.log(modal.style.display);
+  modal.style.display = "flex";
   board.style.display = "none";
 };
 

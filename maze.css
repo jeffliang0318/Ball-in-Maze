@@ -101,6 +101,9 @@ canvas {
    order: 10;
    position: relative;
  }
+.user-profile i{
+  font-size: 50px;
+}
 .pause-window {
   display: none;
   justify-content: center;
