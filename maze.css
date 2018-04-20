@@ -95,10 +95,11 @@ canvas {
    align-items: center;
    justify-content: center;
    height: 250%;
-   width: 200%;
+   width: 100%;
    top: -5px;
    background-color: rgba(0,0,0,0.5);
    order: 10;
+   position: relative;
  }
 .pause-window {
   display: none;
@@ -107,9 +108,13 @@ canvas {
   width: 100%;
   order: 9;
 }
-
+.rule-window {
+  display: none;
+  position: absolute;
+}
 .pause-window h2 {
   padding: 150px;
   font-size: 56px;
   color: white;
+  text-align: center;
 }

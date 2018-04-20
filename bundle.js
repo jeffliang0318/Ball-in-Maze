@@ -277,15 +277,30 @@ var pauseButton = document.getElementById("pause");
 var board = document.getElementById("boardId");
 var pauseWindow = document.getElementById("pause-window");
 var modal = document.getElementById("modal");
-
+var ruleWindow = document.getElementById("rule-window");
+var ruleButton = document.getElementById("rule");
 pauseWindow.onclick = function () {
   pauseWindow.style.display = "none";
   modal.style.display = "none";
   board.style.display = "block";
+  ruleWindow.style.display = "none";
 };
+ruleWindow.onclick = function () {
+  ruleWindow.style.display = "none";
+  modal.style.display = "none";
+  board.style.display = "block";
+  ruleWindow.style.display = "none";
+};
+
 pauseButton.onclick = function () {
   pauseWindow.style.display = "flex";
   modal.style.display = "flex";
+  board.style.display = "none";
+};
+ruleButton.onclick = function () {
+  modal.style.display = "flex";
+  ruleWindow.style.display = "block";
+  console.log(modal.style.display);
   board.style.display = "none";
 };
 
