@@ -28,7 +28,9 @@ This project used following technologies:
 * HTML5 Canvas for DOM manipulation and rendering
 * Webpack to bundle and serve up the various scripts.
 
-###Bonus feature
+
+### Bonus feature
+
 
 ![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/shorter_smoother.gif)
 
