@@ -105,6 +105,7 @@ document.onkeydown = function(e){
         map[ball.y][ball.x] = 2;
         map[ball.y][ball.x - 1] = 2;
         [ball.x, ball.y] = [1,1];
+        alert("You Win");
         // drawMap();
         break;
       }
@@ -125,6 +126,15 @@ document.onkeydown = function(e){
       [ball.x, ball.y] = [1,1];
       // drawMap();
       break;
+    } else if (map[ball.y][ball.x - 1] === 4) {
+      //  ball drop into the hole
+      map[1][1] = 5;
+      map[ball.y][ball.x] = 2;
+      map[ball.y][ball.x - 1] = 2;
+      [ball.x, ball.y] = [1,1];
+      alert("You Win");
+      // drawMap();
+      break;
     }
       break;
     case 39:
@@ -141,6 +151,15 @@ document.onkeydown = function(e){
       map[1][1] = 5;
       map[ball.y][ball.x] = 2;
       [ball.x, ball.y] = [1,1];
+      // drawMap();
+      break;
+    } else if (map[ball.y][ball.x - 1] === 4) {
+      //  ball drop into the hole
+      map[1][1] = 5;
+      map[ball.y][ball.x] = 2;
+      map[ball.y][ball.x - 1] = 2;
+      [ball.x, ball.y] = [1,1];
+      alert("You Win");
       // drawMap();
       break;
     }
@@ -160,6 +179,15 @@ document.onkeydown = function(e){
       [ball.x, ball.y] = [1,1];
       // drawMap();
       break;
+    } else if (map[ball.y][ball.x - 1] === 4) {
+      //  ball drop into the hole
+      map[1][1] = 5;
+      map[ball.y][ball.x] = 2;
+      map[ball.y][ball.x - 1] = 2;
+      [ball.x, ball.y] = [1,1];
+      alert("You Win");
+      // drawMap();
+      break;
     }
       break;
 
@@ -173,18 +201,19 @@ restartButton.onclick = function () {
     [ball.x, ball.y] = [1,1];
 };
 let pauseButton = document.getElementById("pause");
-let board = document.getElementById("game-board");
+let board = document.getElementById("boardId");
 let pauseWindow = document.getElementById("pause-window");
+let modal = document.getElementById("modal");
 
 pauseWindow.onclick = function () {
-  alert(1)
   pauseWindow.style.display = "none";
+  modal.style.display = "none";
+  board.style.display = "block";
 };
 pauseButton.onclick = function () {
-  console.log(pauseWindow.style.display)
   pauseWindow.style.display = "flex";
-  console.log(pauseWindow.style.display)
-
+  modal.style.display = "flex";
+  board.style.display = "none";
 };
 
 

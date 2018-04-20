@@ -152,11 +152,12 @@ document.onkeydown = function (e) {
         map[1][1] = 5;
         map[ball.y][ball.x] = 2;
         map[ball.y][ball.x - 1] = 2;
-
-        // drawMap();
         var _ref2 = [1, 1];
         ball.x = _ref2[0];
         ball.y = _ref2[1];
+
+        alert("You Win");
+        // drawMap();
         break;
       }
       break;
@@ -179,6 +180,18 @@ document.onkeydown = function (e) {
         ball.x = _ref3[0];
         ball.y = _ref3[1];
         break;
+      } else if (map[ball.y][ball.x - 1] === 4) {
+        //  ball drop into the hole
+        map[1][1] = 5;
+        map[ball.y][ball.x] = 2;
+        map[ball.y][ball.x - 1] = 2;
+        var _ref4 = [1, 1];
+        ball.x = _ref4[0];
+        ball.y = _ref4[1];
+
+        alert("You Win");
+        // drawMap();
+        break;
       }
       break;
     case 39:
@@ -196,9 +209,21 @@ document.onkeydown = function (e) {
         map[ball.y][ball.x] = 2;
 
         // drawMap();
-        var _ref4 = [1, 1];
-        ball.x = _ref4[0];
-        ball.y = _ref4[1];
+        var _ref5 = [1, 1];
+        ball.x = _ref5[0];
+        ball.y = _ref5[1];
+        break;
+      } else if (map[ball.y][ball.x - 1] === 4) {
+        //  ball drop into the hole
+        map[1][1] = 5;
+        map[ball.y][ball.x] = 2;
+        map[ball.y][ball.x - 1] = 2;
+        var _ref6 = [1, 1];
+        ball.x = _ref6[0];
+        ball.y = _ref6[1];
+
+        alert("You Win");
+        // drawMap();
         break;
       }
       break;
@@ -216,9 +241,21 @@ document.onkeydown = function (e) {
         map[ball.y][ball.x] = 2;
 
         // drawMap();
-        var _ref5 = [1, 1];
-        ball.x = _ref5[0];
-        ball.y = _ref5[1];
+        var _ref7 = [1, 1];
+        ball.x = _ref7[0];
+        ball.y = _ref7[1];
+        break;
+      } else if (map[ball.y][ball.x - 1] === 4) {
+        //  ball drop into the hole
+        map[1][1] = 5;
+        map[ball.y][ball.x] = 2;
+        map[ball.y][ball.x - 1] = 2;
+        var _ref8 = [1, 1];
+        ball.x = _ref8[0];
+        ball.y = _ref8[1];
+
+        alert("You Win");
+        // drawMap();
         break;
       }
       break;
@@ -230,22 +267,24 @@ var restartButton = document.getElementById("restart");
 restartButton.onclick = function () {
   map[1][1] = 5;
   map[ball.y][ball.x] = 2;
-  var _ref6 = [1, 1];
-  ball.x = _ref6[0];
-  ball.y = _ref6[1];
+  var _ref9 = [1, 1];
+  ball.x = _ref9[0];
+  ball.y = _ref9[1];
 };
 var pauseButton = document.getElementById("pause");
-var board = document.getElementById("game-board");
+var board = document.getElementById("boardId");
 var pauseWindow = document.getElementById("pause-window");
+var modal = document.getElementById("modal");
 
 pauseWindow.onclick = function () {
-  alert(1);
   pauseWindow.style.display = "none";
+  modal.style.display = "none";
+  board.style.display = "block";
 };
 pauseButton.onclick = function () {
-  console.log(pauseWindow.style.display);
   pauseWindow.style.display = "flex";
-  console.log(pauseWindow.style.display);
+  modal.style.display = "flex";
+  board.style.display = "none";
 };
 
 // drawMap();

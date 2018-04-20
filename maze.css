@@ -90,19 +90,22 @@ canvas {
    background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1524067906/coin.jpg');
    display: inline-block;
  }
- .pause-modal {
+ .modal {
    display: none;
    align-items: center;
    justify-content: center;
-   height: 100%;
-   width: 100%;
+   height: 250%;
+   width: 200%;
    top: -5px;
    background-color: rgba(0,0,0,0.5);
+   order: 10;
  }
 .pause-window {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  order: 9;
 }
 
 .pause-window h2 {
