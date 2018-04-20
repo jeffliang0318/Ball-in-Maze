@@ -174,14 +174,17 @@ restartButton.onclick = function () {
 };
 let pauseButton = document.getElementById("pause");
 let board = document.getElementById("game-board");
-let pauseModal = document.getElementById("pause-modal");
+let pauseWindow = document.getElementById("pause-window");
 
-pauseModal.onclick = function () {
-  pauseModal.style.display = "none";
+pauseWindow.onclick = function () {
+  alert(1)
+  pauseWindow.style.display = "none";
 };
 pauseButton.onclick = function () {
-  console.log("flex");
-  pauseModal.style.display = "flex";
+  console.log(pauseWindow.style.display)
+  pauseWindow.style.display = "flex";
+  console.log(pauseWindow.style.display)
+
 };
 
 

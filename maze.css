@@ -17,7 +17,6 @@ canvas {
  .game-board {
    display: flex;
    justify-content: space-around;
-   position: relative;
    background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909589/wood-1043207_1280.jpg');
    background-size: cover;
  }
@@ -56,6 +55,7 @@ canvas {
    /* border: 1px solid grey; */
    width: 600px;
    height: 600px;
+   position: relative;
  }
  .game {
    display: flex;
@@ -91,11 +91,11 @@ canvas {
    display: inline-block;
  }
  .pause-modal {
-   display: flex;
+   display: none;
    align-items: center;
    justify-content: center;
-   height: 89%;
-   width: 68%;
+   height: 100%;
+   width: 100%;
    top: -5px;
    background-color: rgba(0,0,0,0.5);
  }
