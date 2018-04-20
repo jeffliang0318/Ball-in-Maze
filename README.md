@@ -13,16 +13,16 @@ In the javascript version, you can use either mouse or keyboard to play the game
 
 In Ball-in-Maze, users will be able to:
 
-- [ ] Start, pause, restart
+- [x] Start, pause, restart
 - [ ] Play with mouse or keyboard
-- [ ] Move up, down, left, right
-- [ ] Restart the game if ball dropped
+- [x] Move up, down, left, right
+- [x] Restart the game if ball dropped
 - [ ] Hear sounds on ball collisions and drop
 - [ ] Can play different maze
 
 In addition, this project will have:
 
-- [ ] An modal describe the rules
+- [x] An modal describe the rules
 
 ### Wireframes
 
@@ -61,30 +61,31 @@ Over the weekend:
 Day 1: Initial project setup, including maze and ball.
 Setup all necessary Node modules, including getting webpack up and running. Create webpack.config.js as well as package.json. Write a basic entry file and the bare bones of all 4 scripts outlined above. Learn the basics of Web Audio API. Goals for the day:
 
-- [ ] Get webpack serving files and frame out index.html
+- [x] Get webpack serving files and frame out index.html
 - [ ] Learn enough Web Audio to render an object to the Canvas element and create a sound
-- [ ] Add maze to the page
-- [ ] Add ball to the page
+- [x] Add maze to the page
+- [x] Add ball to the page
 
 Day 2: Create the logic backend. Build out modular functions for handling the different events. Goals for the day:
 
-- [ ] Have a functional screen on the Canvas frontend that correctly handles creation and running of the simulation.
-- [ ] Make sure that starting, stopping, and restarting works.
+- [x] Have a functional screen on the Canvas frontend that correctly handles creation and running of the simulation.
+- [x] Make sure that starting, stopping, and restarting works.
 
 Day 3: Dedicate this day to learning the Web Audio API. First, build out the AudioEvent object to connect to the Maze object. Then, use maze.js to create and render Ball and AudioEvents. Goals for the day:
 
-- [ ] Complete the ball.js module (constructor, update functions)
+- [x] Complete the ball.js module (constructor, update functions)
 - [ ] Get sounds to play on collisions
 - [ ] Build first sound library
-- [ ] Get collision graphics and physics working(bounce)
+- [x] Get collision graphics and physics working(bounce)
 - [ ] Make the ball able to be created with mouse. Set vectors on mouse release.
 
 Day 4: Install the controls for the user to interact with the game. Style the frontend, making it polished and professional. Goals for the day:
 
-- [ ] Create controls for ball move speed, pause, start, restart
+- [x] Create controls for ball move speed, pause, start, restart
 - [ ] Add shadow on the maze wall
 - [ ] Have a styled Canvas, nice looking controls and title
 
+![index]()
 ###Bonus featurn
 
 There are many directions in which this project could be better.
