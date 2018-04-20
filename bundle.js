@@ -270,6 +270,8 @@ restartButton.onclick = function () {
   var _ref9 = [1, 1];
   ball.x = _ref9[0];
   ball.y = _ref9[1];
+
+  map[3][1] = 4;
 };
 var pauseButton = document.getElementById("pause");
 var board = document.getElementById("boardId");

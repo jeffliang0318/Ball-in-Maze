@@ -1,6 +1,7 @@
 # Ball-in-Maze
 
 ![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/labyrinth-1738039_960_720.jpg)
+[Live Demo](https://ball-in-maze.herokuapp.com/index.html)
 
 ### Background and Overview
 
