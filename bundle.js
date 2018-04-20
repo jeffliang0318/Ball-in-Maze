@@ -268,8 +268,8 @@ document.onkeydown = function (e) {
 var restartButton = document.getElementById("restart");
 restartButton.onclick = function () {
   if ([ball.x, ball.y] !== [1, 1]) {
-    map[1][1] = 5;
     map[ball.y][ball.x] = 2;
+    map[1][1] = 5;
     var _ref9 = [1, 1];
     ball.x = _ref9[0];
     ball.y = _ref9[1];
