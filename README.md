@@ -85,7 +85,8 @@ Day 4: Install the controls for the user to interact with the game. Style the fr
 - [ ] Add shadow on the maze wall
 - [ ] Have a styled Canvas, nice looking controls and title
 
-![index]()
+![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/shorter_smoother.gif)
+
 ###Bonus featurn
 
 There are many directions in which this project could be better.
