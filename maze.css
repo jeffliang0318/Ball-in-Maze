@@ -17,7 +17,7 @@ canvas {
  .game-board {
    display: flex;
    justify-content: space-around;
-   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909589/wood-1043207_1280.jpg');
+   background-image: url('https://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909589/wood-1043207_1280.jpg');
    background-size: cover;
  }
  .side-section {
@@ -48,7 +48,7 @@ canvas {
    /* border: 1px solid red; */
   background-size: cover;
   background-position: center;
-   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523915701/wood-1043207_1280_copy.jpg');
+   background-image: url('https://res.cloudinary.com/dgxmjwbrc/image/upload/v1523915701/wood-1043207_1280_copy.jpg');
    display: inline-block;
  }
  .board {
@@ -79,7 +79,7 @@ canvas {
    height: 5%;
    width: 5%;
    background-size: cover;
-   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909588/download.jpg');
+   background-image: url('https://res.cloudinary.com/dgxmjwbrc/image/upload/v1523909588/download.jpg');
    display: inline-block;
  }
  .goal {
@@ -87,7 +87,7 @@ canvas {
    width: 5%;
    background-size: cover;
    background-position: center;
-   background-image: url('http://res.cloudinary.com/dgxmjwbrc/image/upload/v1524067906/coin.jpg');
+   background-image: url('https://res.cloudinary.com/dgxmjwbrc/image/upload/v1524067906/coin.jpg');
    display: inline-block;
  }
  .modal {

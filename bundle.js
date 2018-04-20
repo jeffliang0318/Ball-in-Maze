@@ -267,13 +267,15 @@ document.onkeydown = function (e) {
 
 var restartButton = document.getElementById("restart");
 restartButton.onclick = function () {
-  map[1][1] = 5;
-  map[ball.y][ball.x] = 2;
-  var _ref9 = [1, 1];
-  ball.x = _ref9[0];
-  ball.y = _ref9[1];
+  if ([ball.x, ball.y] !== [1, 1]) {
+    map[1][1] = 5;
+    map[ball.y][ball.x] = 2;
+    var _ref9 = [1, 1];
+    ball.x = _ref9[0];
+    ball.y = _ref9[1];
 
-  map[3][1] = 4;
+    map[3][1] = 4;
+  }
 };
 var pauseButton = document.getElementById("pause");
 var board = document.getElementById("boardId");

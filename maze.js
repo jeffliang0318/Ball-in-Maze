@@ -198,10 +198,12 @@ document.onkeydown = function(e){
 
 let restartButton = document.getElementById("restart");
 restartButton.onclick = function () {
+  if ([ball.x, ball.y] !== [1,1]) {
     map[1][1] = 5;
     map[ball.y][ball.x] = 2;
     [ball.x, ball.y] = [1,1];
     map[3][1] = 4;
+  }
 };
 let pauseButton = document.getElementById("pause");
 let board = document.getElementById("boardId");
