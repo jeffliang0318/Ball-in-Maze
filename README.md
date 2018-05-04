@@ -2,7 +2,9 @@
 
 ![index](https://github.com/jeffliang0318/Ball-in-Maze/blob/master/img/labyrinth-1738039_960_720.jpg)
 [Live Demo](https://ball-in-maze.herokuapp.com/index.html)
+
 [Live Demo](https://jeffliang0318.github.io/Ball_in_Maze_II/)
+
 ### Background and Overview
 
 Ball in maze is a game to manipulating the maze board to get the ball towards the goal.
